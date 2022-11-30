@@ -1,0 +1,12 @@
+.name{
+font-size: 20px;
+}
+.designation {
+  color: #73737b;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+}
+.icon a{
+    margin: 12px;
+}
