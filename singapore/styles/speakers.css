@@ -1,3 +1,11 @@
+.title{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.title_content{
+    color:#262424;
+    font-size: 36px;
+}
 .name{
 font-size: 20px;
 }
