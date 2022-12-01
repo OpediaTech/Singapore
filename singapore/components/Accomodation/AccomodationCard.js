@@ -15,10 +15,10 @@ const AccomodationCard = ({accomodation}) => {
           <p className="accomodation_content">
           {accomodation?.content2}
           </p>
-          <p className="accomodation_footer_content">
+          <p className="accomodation_content">
           {accomodation?.specialContent}
           </p>
-          <Button className="learn_more_btn border-0 ">Learn More</Button>
+          <a href=""><Button className="learn_more_btn border-0 fw-bold ">Learn More</Button></a>
         </div>
         <div className="col-12 col-lg-6">
           <Image className="w-100" src={accomodation?.pic} />

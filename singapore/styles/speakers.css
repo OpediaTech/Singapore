@@ -44,18 +44,13 @@
     line-height: 35px;
     color: #262424;
 }
-.accomodation_content {
+.accomodation_content p{
   font-weight: 300;
   font-size: 20px;
   line-height: 33px;
   color: #262424;
 }
-.accomodation_footer_content {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 33px;
-  color: #262424;
-}
+
 .learn_more_btn {
   background: #facd02;
   border-radius: 4px;
@@ -65,3 +60,13 @@
   line-height: 22px;
   color: #000000;
 }
+
+
+/* supporting organization css */
+
+.card{
+  height: 604px;
+  border: none;
+  border-radius: 5px;
+}
+
