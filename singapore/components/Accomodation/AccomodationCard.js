@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import fullertone from "../../public/accomodation/fullertone.png";
 import { Button } from "react-bootstrap";
 
 const AccomodationCard = ({accomodation}) => {
