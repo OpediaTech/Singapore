@@ -19,7 +19,7 @@ const ExhibitorBanner = () => {
     },
   ];
   return (
-    <Container className="my-5">
+    <Container className="mt-5 section_gap">
       <div className="row g-5">
         <div className="col-12 col-lg-8">
           <h2>Ergonomics and hygiene Exhibition</h2>
