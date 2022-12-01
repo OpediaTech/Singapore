@@ -65,8 +65,11 @@
 /* supporting organization css */
 
 .card{
-  height: 604px;
+  height: 100%;
   border: none;
   border-radius: 5px;
 }
+
+
+
 
