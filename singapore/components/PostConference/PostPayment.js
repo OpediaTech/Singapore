@@ -36,7 +36,7 @@ const PostPayment = () => {
             </div>
             <div className="mb-5">
           <p className="fw-bold">Select your payment method</p>
-          <div className='d-flex'>
+          <div className='d-flex flex-column flex-lg-row'>
           {options.map((option, index) => (
             <div key={index} className="d-flex mb-3 me-4">
               <Form.Check

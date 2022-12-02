@@ -70,16 +70,18 @@ const ExhibitorForm = () => {
           <p className="fw-bold">
             Which day(s) will you be attending the exhibition?
           </p>
+          <div className='d-flex flex-column flex-lg-row'>
           {options.map((option, index) => (
-            <div key={index} className="d-flex mb-3">
+            <div key={index} className="d-flex mb-3 me-4">
               <Form.Check
-                className="radioOption d-inline"
+                className="radioOption"
                 label={option.label}
                 name={option.name}
                 type="radio"
               />
             </div>
           ))}
+          </div>
         </div>
 
         <div className="d-flex justify-content-between mt-5">

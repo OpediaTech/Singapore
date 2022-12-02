@@ -37,16 +37,18 @@ const PaymentForm = () => {
         </Form.Group>
         <div className="mb-5">
           <p className="fw-bold">Payment Method</p>
+          <div className='d-flex flex-column flex-lg-row'>
           {options.map((option, index) => (
-            <div key={index} className="d-flex mb-3">
+            <div key={index} className="d-flex mb-3 me-4">
               <Form.Check
-                className="radioOption d-inline"
+                className="radioOption"
                 label={option.label}
                 name={option.name}
                 type="radio"
               />
             </div>
           ))}
+          </div>
         </div>
         <Form.Group className="mb-5" controlId="formBasicEmail">
           <Form.Label className="fw-bold">

@@ -51,16 +51,18 @@ const RegistrationForm = () => {
             </Form.Group>
             <div>
           <p className="fw-bold">Membership Type</p>
+          <div className='d-flex flex-column flex-lg-row'>
           {options.map((option, index) => (
-            <div key={index} className="d-flex mb-3">
+            <div key={index} className="d-flex mb-3 me-4">
               <Form.Check
-                className="radioOption d-inline"
+                className="radioOption"
                 label={option.label}
                 name={option.name}
                 type="radio"
               />
             </div>
           ))}
+          </div>
         </div>
         <Form.Group className="mb-5" controlId="formBasicEmail">
               <Form.Label className="fw-bold mb-3">Are you registering Individually or for a group?</Form.Label>
