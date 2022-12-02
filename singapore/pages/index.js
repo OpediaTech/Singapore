@@ -10,6 +10,7 @@ import Speakers from "../components/Speakers/Speakers";
 import SupportingOgn from "../components/SupportingOgzn/SupportingOgn";
 import styles from "../styles/Home.module.css";
 import SpeakerHeading from "../components/Speakers/SpeakerHeading";
+import GallerySection from "../components/Gallery/GallerySection";
 
 export default function Home() {
   return (
@@ -29,14 +30,15 @@ export default function Home() {
         <h2 className="fw-bold mb-5">Our Partners & Supporters</h2>
         <Partners />
       </Container>
-      <div className="section_gap">
-        <Gallery length={4} />
+      <Container className="section_gap">
+        <h2 className="text-center mb-5 fw-bold">Explore Event Gallary</h2>
+        <GallerySection length={4} />
         <div className="text-center">
           <a href="GalleryPage">
             <Button className="see_all_btn">See All Photos</Button>
           </a>
         </div>
-      </div>
+      </Container>
       <div className="section_gap">
         <SupportingOgn length={2} />
         <div className="text-center">

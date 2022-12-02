@@ -1,5 +1,6 @@
 import React from "react";
 import ReportTerms from "../components/Exhibitors/ReportTerms";
+import Footer from "../components/Footer";
 import PaymentForm from "../components/Payment/PaymentForm";
 import Registrationbanner from "../components/Registration/Registrationbanner";
 import RegistrationForm from "../components/Registration/RegistrationForm";
@@ -11,6 +12,7 @@ const RegistrationPage = () => {
       <RegistrationForm />
       <ReportTerms />
       <PaymentForm />
+      <Footer/>
     </div>
   );
 };

@@ -11,7 +11,7 @@ import yt from "../public/footer/yt.png";
 
 const Footer = () => {
   return (
-    <Container className="footer">
+    <Container className="footer my-5">
       <div className="row g-5">
         <div className="col-12 col-lg-6">
           <h1>Ready to join us ?</h1>
