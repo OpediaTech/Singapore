@@ -107,3 +107,8 @@
 .section_gap{
   margin-bottom: 120px;
 }
+.inputField{
+  background-color:  #F3F3F3;
+  height: 44px;
+  border-radius: 4px;
+}

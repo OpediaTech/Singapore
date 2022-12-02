@@ -22,7 +22,7 @@ const ExhibitorBanner = () => {
     <Container className="mt-5 section_gap">
       <div className="row g-5">
         <div className="col-12 col-lg-8">
-          <h2>Ergonomics and hygiene Exhibition</h2>
+          <h2 className="accomodation_bluetitle">Ergonomics and hygiene Exhibition</h2>
           <div className="d-flex align-items-center exhibitor_content">
             <Image className="me-3" src={listIcon} alt="list" />
              <p className="m-0">Entry is Free of Charge</p>
