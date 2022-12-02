@@ -13,13 +13,13 @@ export default function Home() {
     <div>
       <KeynoteSpeakers />
       <LineUp />
-      <div>
+      <div className="section_gap">
         <Gallery length={4} />
         <div className="text-center">
           <Button className="see_all_btn">See All Photos</Button>
         </div>
       </div>
-      <div>
+      <div className="section_gap">
         <SupportingOgn length={2} />
         <div className="text-center">
           <Button className="see_all_btn">See All Organizations</Button>
