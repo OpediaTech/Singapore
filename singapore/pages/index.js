@@ -5,13 +5,14 @@ import LineUp from "../components/Exhibitors/LineUp";
 import Footer from "../components/Footer";
 import Gallery from "../components/Gallery/Gallery";
 import KeynoteSpeakers from "../components/Speakers/KeynoteSpeakers";
+import Speakers from "../components/Speakers/Speakers";
 import SupportingOgn from "../components/SupportingOgzn/SupportingOgn";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
     <div>
-      <KeynoteSpeakers />
+      <Speakers minLength={0} maxLength={8} />
       <LineUp />
       <div className="section_gap">
         <Gallery length={4} />

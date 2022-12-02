@@ -4,7 +4,7 @@ import KeynoteSpeakers from "../components/Speakers/KeynoteSpeakers";
 import PlenarySpeakers from "../components/Speakers/PlenarySpeakers";
 import radio from "../public/speakers/icon/radio.png";
 
-const Speakers = () => {
+const SpeakerPage = () => {
   return (
     <div>
       <div className="container">
@@ -15,10 +15,10 @@ const Speakers = () => {
 
         <p className="title_content">We believe a great speaker can change the world by their voice</p>
       </div>
-      <KeynoteSpeakers />
+      <KeynoteSpeakers/>
       <PlenarySpeakers/>
     </div>
   );
 };
 
-export default Speakers;
+export default SpeakerPage;
