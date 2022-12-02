@@ -1,7 +1,11 @@
+.section_gap {
+  margin-bottom: 120px;
+}
 .title {
   margin-top: 50px;
   margin-bottom: 100px;
 }
+
 .title_content {
   color: #262424;
   font-size: 36px;
@@ -104,9 +108,7 @@
   font-weight: bolder;
   color: #1d4a89;
 }
-.section_gap {
-  margin-bottom: 120px;
-}
+
 .inputField {
   background-color: #f3f3f3;
   height: 44px;
@@ -129,10 +131,30 @@
   color: #1d4a89;
 }
 
-
-.see_all_btn{
+.see_all_btn {
   background-color: #262424;
   border-radius: 4px;
   padding: 15px 40px;
   border: none;
+}
+
+.footer h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 62px;
+  color: #1d4a89;
+}
+.footer a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  color: #262424;
+}
+.footer p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.045em;
+  color: #000000;
 }

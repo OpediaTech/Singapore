@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Button } from "react-bootstrap";
 import LineUp from "../components/Exhibitors/LineUp";
+import Footer from "../components/Footer";
 import Gallery from "../components/Gallery/Gallery";
 import KeynoteSpeakers from "../components/Speakers/KeynoteSpeakers";
 import SupportingOgn from "../components/SupportingOgzn/SupportingOgn";
@@ -24,6 +25,7 @@ export default function Home() {
           <Button className="see_all_btn">See All Organizations</Button>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
