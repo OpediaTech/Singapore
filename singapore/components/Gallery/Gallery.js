@@ -10,7 +10,7 @@ import gallery6 from '../../public/gallery/gallery6.png';
 import gallery7 from '../../public/gallery/gallery7.png';
 import gallery8 from '../../public/gallery/gallery8.png';
 
-const Gallery = () => {
+const Gallery = ({length}) => {
     const galleryPhotoes = [
         {
             pic: gallery1
@@ -42,7 +42,7 @@ const Gallery = () => {
             <h2 className='fw-bold text-center my-5'>Gallery</h2>
             <div className='row g-5 mb-5'>
             {
-                galleryPhotoes.map((photo,index)=><div key={index}
+                galleryPhotoes.slice(0,length).map((photo,index)=><div key={index}
                 className="col-12 col-lg-6">
                     <Image className='w-100' src={photo.pic} alt="galleryImg"/>
                 </div>)

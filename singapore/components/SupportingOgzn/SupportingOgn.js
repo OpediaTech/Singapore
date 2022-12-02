@@ -14,7 +14,7 @@ import naihe from "../../public/supporting-organization/naihe.png";
 import { Button, Container } from "react-bootstrap";
 import Image from "next/image";
 
-const SupportingOgn = () => {
+const SupportingOgn = ({length}) => {
   const organizations = [
     {
       pic: iom,
@@ -91,9 +91,9 @@ const SupportingOgn = () => {
   ];
   return (
     <Container className="mb-5">
-      <h2 className="my-5 fw-bold text-center">Suporting Organizations</h2>
+      <h2 className="my-5 fw-bold text-center">Supporting Organizations</h2>
       <div className="row g-5">
-        {organizations.map((organization, index) => (
+        {organizations.slice(0,length).map((organization, index) => (
           <div
             key={index}
             className="col-12 col-lg-6"

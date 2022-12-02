@@ -11,7 +11,6 @@ import been from "../../public/speakers/plenary/been.png";
 import mehta from "../../public/speakers/plenary/mehta.png";
 import SpeakerCard from "./SpeakerCard";
 
-
 const PlenarySpeakers = () => {
   const speakers = [
     {
@@ -82,11 +81,7 @@ const PlenarySpeakers = () => {
       <h3 className="text-center title fw-bold">Plenary Speakers</h3>
       <div className="row g-5">
         {speakers.map((speaker, index) => (
-          <SpeakerCard
-           
-            key={index}
-            speaker={speaker}
-          ></SpeakerCard>
+          <SpeakerCard key={index} speaker={speaker}></SpeakerCard>
         ))}
       </div>
     </div>
