@@ -35,14 +35,14 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className="row g-5 mt-4">
+      <div className="row g-5 mt-3">
         <div className="col-12 col-lg-6">
           <a href="">
             <Image className="ms-2" src={logo} alt="arrow" />
           </a>
         </div>
         <div className="col-12 col-lg-6">
-          <div className="d-flex justify-content-between align-items-center">
+          <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
             <div className="">
             <p>@2023. All right resereved</p>
             </div>
