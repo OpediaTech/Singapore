@@ -18,7 +18,9 @@ const ExhibitorForm = () => {
   ];
   return (
     <Container className="section_gap">
-        <h2 className="accomodation_bluetitle text-center mb-5">Fill up the form</h2>
+      <h2 className="accomodation_bluetitle text-center mb-5">
+        Fill up the form
+      </h2>
       <Form>
         <div className="row g-5">
           <div className="col-12 col-lg-6">
@@ -66,7 +68,7 @@ const ExhibitorForm = () => {
           {options.map((option, index) => (
             <div key={index} className="d-flex mb-3">
               <Form.Check
-                inline
+                className="d-inline"
                 label={option.label}
                 name={option.name}
                 type="radio"
@@ -76,11 +78,36 @@ const ExhibitorForm = () => {
         </div>
 
         <div className="d-flex justify-content-between mt-5">
-            <Button className="inputField border-0 text-black px-5">Save as Draft</Button>
-            <Button className="learn_more_btn text-white fw-bold">Next</Button>
-
+          <Button className="inputField border-0 text-black px-5">
+            Save as Draft
+          </Button>
+          <Button className="learn_more_btn text-white fw-bold">Next</Button>
         </div>
       </Form>
+      
+        {/* Referral code part start*/}
+        <div>
+            <Form>
+            <div className="col-12 col-lg-6">
+            <Form.Group className="mb-3" controlId="formBasicPassword">
+              <Form.Label className="fw-bold mb-3">Referral code</Form.Label>
+              <Form.Control
+                className="inputField border-0"
+                type="text"
+                placeholder="Enter your answer"
+              />
+            </Form.Group>
+            </div>
+           
+            </Form>
+        <div className="d-flex justify-content-between mt-5">
+          <Button className="inputField border-0 text-black px-5">
+          Back
+          </Button>
+          <Button className="learn_more_btn text-white fw-bold">Next</Button>
+        </div>
+        </div>
+          {/* Referral code part start*/}
     </Container>
   );
 };
