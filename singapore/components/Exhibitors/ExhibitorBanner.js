@@ -1,23 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import { Button, ButtonGroup, Container } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import listIcon from "../../public/icons/list.png";
+import ButtonTap from "./ButtonTap";
 
 const ExhibitorBanner = () => {
-  const buttons = [
-    {
-      btnName: "Participent",
-      className: "learn_more_btn",
-    },
-    {
-      btnName: "Sponser",
-      className: "exhibitor_btn",
-    },
-    {
-      btnName: "Workshop",
-      className: "exhibitor_btn",
-    },
-  ];
+
   return (
     <Container className="mt-5 section_gap">
       <div className="row g-5">
@@ -44,13 +32,7 @@ const ExhibitorBanner = () => {
         </div>
 
         <div className="col-12 col-lg-4">
-          <ButtonGroup aria-label="Basic example">
-            {buttons.map((btn, index) => (
-              <Button key={index} className={btn.className}>
-                {btn.btnName}
-              </Button>
-            ))}
-          </ButtonGroup>
+          <ButtonTap/>
         </div>
       </div>
     </Container>
