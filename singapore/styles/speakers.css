@@ -101,14 +101,30 @@
 }
 .reportTerm a {
   text-decoration: none;
- font-weight: bolder;
-  color: #1D4A89;
+  font-weight: bolder;
+  color: #1d4a89;
 }
-.section_gap{
+.section_gap {
   margin-bottom: 120px;
 }
-.inputField{
-  background-color:  #F3F3F3;
+.inputField {
+  background-color: #f3f3f3;
   height: 44px;
   border-radius: 4px;
+}
+.radioOption {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #73737b;
+}
+.submit_btn {
+  background-color: #1d4a89;
+}
+
+.confirm {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #1d4a89;
 }
