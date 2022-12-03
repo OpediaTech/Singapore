@@ -12,11 +12,21 @@ import styles from "../styles/Home.module.css";
 import SpeakerHeading from "../components/Speakers/SpeakerHeading";
 import GallerySection from "../components/Gallery/GallerySection";
 import Timeline from "../components/Timeline/Timeline";
+import Header from "../components/Header/Header";
+import AboutEgro from "../components/Home/AboutEgro";
+import ProgrammeDetails from "../components/Home/ProgrammeDetails";
+import HealthManagement from "../components/Home/HealthManagement";
+import BreakBtn from "../components/Home/BreakBtn";
 
 export default function Home() {
   return (
     <div>
-      <Timeline/>
+      <Header/>
+      <AboutEgro/>
+      <Container className="section_gap">
+        <h2 className="fw-bold mb-5">Our Partners & Supporters</h2>
+        <Partners />
+      </Container>
       <Container className="section_gap">
         <div className="d-flex flex-column flex-lg-row justify-content-between align-items-center my-5">
           <SpeakerHeading />
@@ -28,10 +38,13 @@ export default function Home() {
         </div>
         <Speakers minLength={0} maxLength={8} />
       </Container>
-      <Container className="section_gap">
-        <h2 className="fw-bold mb-5">Our Partners & Supporters</h2>
-        <Partners />
-      </Container>
+     
+      <div>
+        <ProgrammeDetails/>
+        <HealthManagement/>
+      <Timeline/>
+      <BreakBtn/>
+      </div>
       <Container className="section_gap">
         <h2 className="text-center mb-5 fw-bold">Explore Event Gallary</h2>
         <GallerySection length={4} />
