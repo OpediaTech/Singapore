@@ -11,12 +11,14 @@ import SupportingOgn from "../components/SupportingOgzn/SupportingOgn";
 import styles from "../styles/Home.module.css";
 import SpeakerHeading from "../components/Speakers/SpeakerHeading";
 import GallerySection from "../components/Gallery/GallerySection";
+import Timeline from "../components/Timeline/Timeline";
 
 export default function Home() {
   return (
     <div>
+      <Timeline/>
       <Container className="section_gap">
-        <div className="d-flex justify-content-between align-items-center my-5">
+        <div className="d-flex flex-column flex-lg-row justify-content-between align-items-center my-5">
           <SpeakerHeading />
           <div>
             <a href="SpeakerPage">
