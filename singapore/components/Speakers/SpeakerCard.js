@@ -8,7 +8,7 @@ import Card from "react-bootstrap/Card";
 const SpeakerCard = ({ speaker }) => {
   return (
     <div className="col-12 col-md-6 col-lg-3">
-      <Card className="border-0">
+      <Card className="speakers border-0">
         <Image src={speaker.pic} alt="image" height="280" width="280" />
         <Card.Body className="text-center">
           <Card.Title className="name fw-bold">{speaker.name}</Card.Title>
@@ -31,6 +31,11 @@ const SpeakerCard = ({ speaker }) => {
             </a>
           </div>
         </Card.Body>
+
+        <div className="speaker__hov">
+          <p>{speaker.designation} <strong>{speaker.institude}</strong></p>
+          <p>Principle Scientest at <strong>IOM in Edinburgh</strong> </p>
+        </div>
       </Card>
     </div>
   );
