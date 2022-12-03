@@ -19,7 +19,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="col-12 col-lg-6">
-          <div className="footer d-flex justify-content-between">
+          <div className="footer d-flex flex-column flex-lg-row justify-content-between">
             <div className="d-flex flex-column">
               <a href="">Speakers</a>
               <a href="">Programme</a>

@@ -46,7 +46,7 @@ const Header = () => {
             </NavDropdown>
           </Nav>
           <Nav>
-            <Nav.Link href="#deets">
+            <Nav.Link href="RegistrationPage">
               <Button className="learn_more_btn border-0 fw-bold ">
                 Register Now
               </Button>

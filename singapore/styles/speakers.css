@@ -31,6 +31,15 @@
   color: #262424;
   margin-bottom: 96px;
 }
+@media screen and (max-width: 1199px) {
+  .black_title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 62px;
+    color: #262424;
+    margin-bottom: 96px;
+  }
+    }
 
 /* header css */
 
@@ -114,7 +123,7 @@
   line-height: 35px;
   color: #262424;
 }
-.accomodation_content p {
+.accomodation_content {
   font-weight: 300;
   font-size: 20px;
   line-height: 33px;
@@ -131,7 +140,17 @@
   color: #000000;
   border: none;
 }
+.gap {
+  margin-top: 45px;
+}
 /* speakers hover css */
+.spk_con {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 56px;
+  letter-spacing: 0.02em;
+  color: #262424;
+}
 .icon a {
   color: white;
   background-color: #cfcfcf;
@@ -259,6 +278,14 @@
   font-size: 56px;
   line-height: 62px;
   color: #1d4a89;
+}
+@media screen and (max-width: 1199px) {
+  .footer h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 62px;
+    color: #1d4a89;
+  }
 }
 .footer a {
   text-decoration: none;
@@ -535,60 +562,40 @@
   line-height: 33px;
   color: #000000;
 }
-.navbarPtag-background {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
+.navbarPtagHotal {
   padding: 10px 20px;
-  gap: 10px;
-  width: 424px;
-  height: 43px;
-  left: 7px;
-  top: 49px;
   background: #fdf0b3;
   border-radius: 5px;
   margin: 37px 0;
-}
-.navbarPtagHotal {
-  width: 384px;
-  height: 23px;
-  /* Body text/Small Body text (regular) 14px */
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 23px;
-  /* identical to box height, or 164% */
   color: #000000;
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
 }
 
 .navbarH1Tag {
-  width: 771px;
-  height: 198px;
-  left: 0px;
-  top: 119px;
-  font-family: "Archivo";
-  font-style: normal;
   font-weight: 700;
   font-size: 100px;
   line-height: 85px;
-  /* or 85% */
-  color: #000000;
+  margin-bottom: 33px;
 }
 .navbarH1TagSpan {
   color: #facd02;
 }
+@media screen and (max-width: 1199px) {
+  .navbarH1Tag {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
 
 .navbarPtagHealth {
-  width: 501px;
-  height: 27px;
-  left: 7px;
-  top: 350px;
-
   font-family: "Archivo";
   font-style: normal;
   font-weight: 300;
@@ -608,11 +615,6 @@
   align-items: flex-start;
   padding: 15px 40px;
   gap: 6px;
-  width: 196px;
-  height: 52px;
-  left: 7px;
-  top: 437px;
-  /* Secondary color */
   background: #facd02;
   border-radius: 4px;
   border: none;
@@ -647,17 +649,7 @@
 
 .aboutTheErgoStyleButton {
   box-sizing: border-box;
-  /* Auto layout */
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
   padding: 15px 40px;
-  gap: 6px;
-  width: 298px;
-  height: 52px;
-  left: 350px;
-  top: 895px;
-  /* Secondary color */
   background: #facd02;
   border-radius: 4px;
   border: none;

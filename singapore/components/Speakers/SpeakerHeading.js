@@ -7,10 +7,10 @@ const SpeakerHeading = () => {
         <div className="">
         <div className="d-flex align-items-center">
           <Image src={radio} />
-          <h2 className="ms-4 fw-bold">This Year’s Speakers</h2>
+          <h2 style={{fontSize:"56px"}} className="ms-4 fw-bold">This Year’s Speakers</h2>
         </div>
 
-        <p className="title_content">We believe a great speaker can change the world by their voice</p>
+        <p className="spk_con">We believe a great speaker can change the world by their voice</p>
       </div>
     );
 };
