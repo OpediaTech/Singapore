@@ -3,8 +3,8 @@ import { Container } from 'react-bootstrap';
 
 const AboutEgro = () => {
     return (
-        <Container>
-        <h2 className="aboutTheErgoStyleH2">About the <span className='aboutTheErgoStyleH2Span'>ergonomics and hygiene</span>
+        <Container className='section_gap'>
+        <h2 className="aboutTheErgoStyleH2">About the <span className='aboutTheErgoStyleH2Span'>ergonomics and hygiene</span> <br/>
         Conference 2023
        </h2>
   

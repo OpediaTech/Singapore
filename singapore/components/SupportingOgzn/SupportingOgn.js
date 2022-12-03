@@ -91,7 +91,7 @@ const SupportingOgn = ({length}) => {
   ];
   return (
     <Container className="mb-5">
-      <h2 className="my-5 fw-bold text-center">Supporting Organizations</h2>
+      <h2 className="my-5 fw-bold text-center black_title">Supporting Organizations</h2>
       <div className="row g-5">
         {organizations.slice(0,length).map((organization, index) => (
           <div

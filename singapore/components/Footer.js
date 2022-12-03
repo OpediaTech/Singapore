@@ -3,11 +3,6 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import arrow from "../public/icons/right-arrow.png";
 import logo from "../public/logo/logo.png";
-import facebook from "../public/footer/fb.png";
-import instagram from "../public/footer/insta.png";
-import twitter from "../public/footer/twitter.png";
-import pin from "../public/footer/pinterest.png";
-import yt from "../public/footer/yt.png";
 import {CgFacebook} from "react-icons/cg";
 import {AiFillYoutube} from "react-icons/ai";
 import {TfiPinterest} from "react-icons/tfi";
@@ -17,7 +12,7 @@ const Footer = () => {
   return (
     <Container className="my-5">
       <div className="row g-5">
-        <div className="col-12 col-lg-6">
+        <div className="footer col-12 col-lg-6">
           <h1>Ready to join us ?</h1>
           <a href="">
             Register Now <Image className="ms-2" src={arrow} alt="arrow" />

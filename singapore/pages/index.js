@@ -17,17 +17,28 @@ import AboutEgro from "../components/Home/AboutEgro";
 import ProgrammeDetails from "../components/Home/ProgrammeDetails";
 import HealthManagement from "../components/Home/HealthManagement";
 import BreakBtn from "../components/Home/BreakBtn";
+import Banner from "../components/Home/Banner";
+import banner from "../public/banner/banner_bg.png";
 
 export default function Home() {
+  const styling = {
+    backgroundImage: `url('${banner.src}')`,
+    backgroundSize: "cover",
+    quality: "100",
+    layout: "fill",
+  };
   return (
     <div>
-      <Header/>
-      <AboutEgro/>
+      <div style={styling}>
+        <Header />
+        <Banner />
+      </div>
+      <AboutEgro />
       <Container className="section_gap">
-        <h2 className="fw-bold mb-5">Our Partners & Supporters</h2>
+        <h2 className="fw-bold mb-5 black_title">Our Partners & Supporters</h2>
         <Partners />
       </Container>
-      <Container className="section_gap">
+      <Container id="SpeakerPage" className="section_gap">
         <div className="d-flex flex-column flex-lg-row justify-content-between align-items-center my-5">
           <SpeakerHeading />
           <div>
@@ -38,15 +49,15 @@ export default function Home() {
         </div>
         <Speakers minLength={0} maxLength={8} />
       </Container>
-     
-      <div>
-        <ProgrammeDetails/>
-        <HealthManagement/>
-      <Timeline/>
-      <BreakBtn/>
+
+      <div className="section_gap" id="ProgramPage">
+        <ProgrammeDetails />
+        <HealthManagement />
+        <Timeline />
+        <BreakBtn />
       </div>
       <Container className="section_gap">
-        <h2 className="text-center mb-5 fw-bold">Explore Event Gallary</h2>
+        <h2 className="text-center mb-5 fw-bold black_title">Explore Event Gallary</h2>
         <GallerySection length={4} />
         <div className="text-center">
           <a href="GalleryPage">

@@ -23,6 +23,24 @@
   margin: 12px;
 }
 
+/* index page */
+.black_title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 62px;
+  color: #262424;
+  margin-bottom: 96px;
+}
+
+/* header css */
+
+.menu {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #262424;
+}
+
 /* program details css */
 .program_title {
   font-size: 56px;
@@ -529,6 +547,7 @@
   top: 49px;
   background: #fdf0b3;
   border-radius: 5px;
+  margin: 37px 0;
 }
 .navbarPtagHotal {
   width: 384px;
@@ -580,6 +599,9 @@
 }
 .navbarButtonRegisterPlace {
   box-sizing: border-box;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
   /* Auto layout */
   display: flex;
   flex-direction: row;
@@ -594,24 +616,18 @@
   background: #facd02;
   border-radius: 4px;
   border: none;
+  margin: 75px 0;
 }
 /*end navebar */
 
 /*start aboutTheErgoStyle */
 
 .aboutTheErgoStyleH2 {
-  width: 923px;
-  height: 155px;
-  left: 350px;
-  top: 131px;
-  /* Header Text/Heading01 (56 px) */
   font-family: "Archivo";
   font-style: normal;
   font-weight: 700;
   font-size: 56px;
   line-height: 62px;
-  /* or 110% */
-  /* Text Color */
   color: #262424;
 }
 
@@ -619,19 +635,14 @@
   color: #facd02;
 }
 .aboutTheErgoStyleP {
-  width: 1220px;
-  height: 509px;
-  left: 350px;
-  top: 336px;
   font-family: "Archivo";
   font-style: normal;
   font-weight: 300;
   font-size: 36px;
   line-height: 56px;
-  /* or 156% */
   letter-spacing: 0.01em;
-  /* Text Color */
   color: #262424;
+  margin: 50px 0;
 }
 
 .aboutTheErgoStyleButton {
@@ -651,5 +662,3 @@
   border-radius: 4px;
   border: none;
 }
-
-/*end aboutTheErgoStyle */
