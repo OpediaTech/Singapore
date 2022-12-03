@@ -67,18 +67,18 @@
 /* speakers hover css */
 .icon a{
   color: white;
-  background-color: gray;
+  background-color: #CFCFCF;
   border-radius: 50%;
   height: 27px;
   width: 27px;
-  line-height: 22px;
+  line-height: 25px;
   text-align: center;
   font-size: 15px;
 }
 .speakers{
   height: 446px;
 }
-.speakers a:hover{
+.icon a:hover{
 background-color: black;
 border-radius: 50%;
 } 

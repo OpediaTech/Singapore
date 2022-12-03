@@ -8,10 +8,14 @@ import instagram from "../public/footer/insta.png";
 import twitter from "../public/footer/twitter.png";
 import pin from "../public/footer/pinterest.png";
 import yt from "../public/footer/yt.png";
+import {CgFacebook} from "react-icons/cg";
+import {AiFillYoutube} from "react-icons/ai";
+import {TfiPinterest} from "react-icons/tfi";
+import {BsInstagram, BsTwitter} from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <Container className="footer my-5">
+    <Container className="my-5">
       <div className="row g-5">
         <div className="col-12 col-lg-6">
           <h1>Ready to join us ?</h1>
@@ -20,7 +24,7 @@ const Footer = () => {
           </a>
         </div>
         <div className="col-12 col-lg-6">
-          <div className="d-flex justify-content-between">
+          <div className="footer d-flex justify-content-between">
             <div className="d-flex flex-column">
               <a href="">Speakers</a>
               <a href="">Programme</a>
@@ -49,23 +53,23 @@ const Footer = () => {
             <div className="icon d-flex align-items-center justify-content-center text-white">
             <a href="">
               {" "}
-              <Image src={twitter} />
+              <BsTwitter/>
             </a>
             <a href="">
               {" "}
-              <Image src={facebook} />
+              <CgFacebook/>
             </a>
             <a href="">
               {" "}
-              <Image src={instagram} />
+              <BsInstagram/>
             </a>
             <a href="">
               {" "}
-              <Image src={yt} />
+              <AiFillYoutube/>
             </a>
             <a href="">
               {" "}
-              <Image src={pin} />
+              <TfiPinterest/>
             </a>
           </div>
           </div>
