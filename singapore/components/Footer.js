@@ -14,14 +14,14 @@ const Footer = () => {
       <div className="row g-5">
         <div className="footer col-12 col-lg-6">
           <h1>Ready to join us ?</h1>
-          <a href="">
+          <a href="RegistrationPage">
             Register Now <Image className="ms-2" src={arrow} alt="arrow" />
           </a>
         </div>
         <div className="col-12 col-lg-6">
           <div className="footer d-flex flex-column flex-lg-row justify-content-between">
             <div className="d-flex flex-column">
-              <a href="">Speakers</a>
+              <a href="SpeakerPage">Speakers</a>
               <a href="">Programme</a>
               <a href="">Tickets</a>
             </div>

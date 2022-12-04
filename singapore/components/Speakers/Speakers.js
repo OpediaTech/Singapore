@@ -38,7 +38,7 @@ const Speakers = ({ minLength, maxLength }) => {
     {
       name: "Dr Jason Lee Kai Wei",
       pic: jason,
-      designation: "Director,  ",
+      designation: "Director,",
       institude: "Heat Resilience and Performance Centre",
     },
     {

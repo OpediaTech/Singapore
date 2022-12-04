@@ -41,14 +41,10 @@
 }
 
 /* header css */
-
-.menu {
+.nav-link{
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
-  color: #262424;
-}
-.nav-link{
   color: #262424;
 }
 
