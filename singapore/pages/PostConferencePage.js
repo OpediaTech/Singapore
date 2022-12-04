@@ -12,7 +12,7 @@ const PostConferencePage = () => {
             <Header/>
             <PostBanner/>
             <PostForm/>
-            <PostPayment/>
+          
             <ReportTerms/>
             <Footer/>
         </div>
