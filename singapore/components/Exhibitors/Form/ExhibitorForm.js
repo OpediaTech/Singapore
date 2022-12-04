@@ -1,10 +1,20 @@
 import Image from "next/image";
-import React from "react";
-import { Button, Container, Form } from "react-bootstrap";
+import React, { useState } from "react";
+import { Button, Container, Form, Modal } from "react-bootstrap";
 import ConfirmSms from "./ConfirmSms";
 
-
 const ExhibitorForm = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  const [showform, setShowform] = useState(false);
+
+const handleClick = () =>{
+  setShowform()
+}
+
   const options = [
     {
       label: "Day 1 Wed (31 Aug)",
@@ -70,17 +80,17 @@ const ExhibitorForm = () => {
           <p className="fw-bold">
             Which day(s) will you be attending the exhibition?
           </p>
-          <div className='d-flex flex-column flex-lg-row'>
-          {options.map((option, index) => (
-            <div key={index} className="d-flex mb-3 me-4">
-              <Form.Check
-                className="radioOption"
-                label={option.label}
-                name={option.name}
-                type="radio"
-              />
-            </div>
-          ))}
+          <div className="d-flex flex-column flex-lg-row">
+            {options.map((option, index) => (
+              <div key={index} className="d-flex mb-3 me-4">
+                <Form.Check
+                  className="radioOption"
+                  label={option.label}
+                  name={option.name}
+                  type="radio"
+                />
+              </div>
+            ))}
           </div>
         </div>
 
@@ -88,7 +98,7 @@ const ExhibitorForm = () => {
           <Button className="inputField border-0 text-muted px-5">
             Save as Draft
           </Button>
-          <Button className="learn_more_btn text-white fw-bold">Next</Button>
+          <Button onClick={handleClick} className="learn_more_btn text-white fw-bold">Next</Button>
         </div>
       </Form>
 
@@ -133,16 +143,26 @@ const ExhibitorForm = () => {
         </div>
         <div className="d-flex justify-content-between mt-5">
           <Button className="inputField border-0 text-muted px-5">Back</Button>
+         
+
+          <div onClick={handleShow}>
           <Button className="learn_more_btn text-white fw-bold">Submit</Button>
+      </div>
+
+      <Modal  show={show} onHide={handleClose}>
+        <Modal.Header className="border-0" closeButton>
+        </Modal.Header>
+        <Modal.Body><ConfirmSms/></Modal.Body>
+      
+      </Modal>
+
+
+
         </div>
       </div>
-      {/* modal part start */}
-    <ConfirmSms/>
-      {/* modal part end */}
-      {/* Agreement code part end*/}  
+    
     </Container>
   );
 };
 
 export default ExhibitorForm;
-

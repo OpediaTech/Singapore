@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import Header from '../components/Header/Header';
 import BreakBtn from '../components/Home/BreakBtn';
 import HealthManagement from '../components/Home/HealthManagement';
@@ -13,6 +14,7 @@ const ProgramPage = () => {
         <HealthManagement />
         <Timeline />
         <BreakBtn />
+        <Footer/>
       </div>
     );
 };

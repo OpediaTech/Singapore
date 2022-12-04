@@ -12,8 +12,8 @@ const RegistrationPage = () => {
       <Header/>
       <Registrationbanner />
       <RegistrationForm />
-      <ReportTerms />
       <PaymentForm />
+      <ReportTerms />
       <Footer/>
     </div>
   );

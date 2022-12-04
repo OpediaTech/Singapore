@@ -55,14 +55,14 @@ const Partners = () => {
     ]
     return (
         <div>
-             <div className='d-flex flex-wrap justify-content-evenly justify-content-lg-between  mb-5'>
+             <div className='d-flex flex-column flex-lg-row flex-wrap  align-items-center justify-content-lg-between  mb-5'>
                 {
                     brands.slice(0,5).map((brand,index)=><div key={index}>
                         <Image className='img-fluid mx-auto' height={78} src={brand.pic} alt="brand img"/>
                     </div>)
                 }
             </div>
-            <div className='d-flex flex-wrap flex-lg-nowrap justify-content-center justify-content-lg-between  mb-5'>
+            <div className='d-flex flex-column flex-lg-row flex-wrap flex-lg-nowrap align-items-center justify-content-lg-between  mb-5'>
                 {
                     brands.slice(5,12).map((brand,index)=><div key={index}>
                         <Image className='img-fluid mx-aut0' height={78} src={brand.pic} alt="brand img"/>

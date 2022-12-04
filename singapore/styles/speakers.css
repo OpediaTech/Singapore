@@ -22,7 +22,6 @@
 .icon a {
   margin: 12px;
 }
-
 /* index page */
 .black_title {
   font-weight: 700;
@@ -39,7 +38,7 @@
     color: #262424;
     margin-bottom: 96px;
   }
-    }
+}
 
 /* header css */
 
@@ -47,6 +46,9 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
+  color: #262424;
+}
+.nav-link{
   color: #262424;
 }
 
@@ -144,6 +146,16 @@
   margin-top: 45px;
 }
 /* speakers hover css */
+.speaker h2{
+  font-size: 56px;
+}
+@media screen and (max-width: 1199px) {
+ 
+  .speaker h2{
+font-size: 36px;
+  }
+    }
+
 .spk_con {
   font-weight: 300;
   font-size: 30px;
@@ -247,6 +259,11 @@
 .inputField {
   background-color: #f3f3f3;
   height: 44px;
+  border-radius: 4px;
+}
+.textField {
+  background-color: #f3f3f3;
+  /* height: 44px; */
   border-radius: 4px;
 }
 .radioOption {
@@ -625,26 +642,35 @@
 /*start aboutTheErgoStyle */
 
 .aboutTheErgoStyleH2 {
-  font-family: "Archivo";
-  font-style: normal;
   font-weight: 700;
   font-size: 56px;
   line-height: 62px;
   color: #262424;
+}
+@media screen and (max-width: 1199px) {
+  .aboutTheErgoStyleH2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 62px;
+  }
 }
 
 .aboutTheErgoStyleH2Span {
   color: #facd02;
 }
 .aboutTheErgoStyleP {
-  font-family: "Archivo";
-  font-style: normal;
   font-weight: 300;
   font-size: 36px;
   line-height: 56px;
   letter-spacing: 0.01em;
   color: #262424;
   margin: 50px 0;
+}
+@media screen and (max-width: 1199px) {
+  .aboutTheErgoStyleP {
+    font-size: 20px;
+    line-height: 40px;
+  }
 }
 
 .aboutTheErgoStyleButton {

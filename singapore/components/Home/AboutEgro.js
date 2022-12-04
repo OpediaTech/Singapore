@@ -33,13 +33,13 @@ const AboutEgro = () => {
           Explore Conference Details
         </button>
       </div>
-{/* 
+
       <Modal  show={show} onHide={handleClose}>
         <Modal.Header className="border-0" closeButton></Modal.Header>
         <Modal.Body>
           <AboutModal />
         </Modal.Body>
-      </Modal> */}
+      </Modal>
     </Container>
   );
 };

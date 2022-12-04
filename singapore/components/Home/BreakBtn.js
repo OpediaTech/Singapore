@@ -17,7 +17,7 @@ const BreakBtn = () => {
         },
     ]
     return (
-        <div className='d-flex flex-column flex-lg-row justify-content-center'>
+        <div className='section_gap d-flex flex-column flex-lg-row justify-content-center pt-5'>
             {
                 btns.map((btn,index)=><div key={index}>
                     <Button className={btn.classname}>{btn.name}</Button>

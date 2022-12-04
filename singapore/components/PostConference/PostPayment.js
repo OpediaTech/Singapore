@@ -1,7 +1,11 @@
-import React from 'react';
-import { Container, Form } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Button, Container, Form, Modal } from 'react-bootstrap';
+import ConfirmSms from '../Exhibitors/Form/ConfirmSms';
 
 const PostPayment = () => {
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
     const paragraph = [
         {
             para:"Regular Price: $481.50 (inclusive of GST)"
@@ -48,7 +52,22 @@ const PostPayment = () => {
             </div>
           ))}
           </div>
-         
+          <div className="d-flex justify-content-between mt-5">
+          <Button className="inputField border-0 text-muted px-5">Back</Button>
+
+          <div onClick={handleShow}>
+            <Button className="learn_more_btn text-white fw-bold">
+              Submit
+            </Button>
+          </div>
+
+          <Modal show={show} onHide={handleClose}>
+            <Modal.Header className="border-0" closeButton></Modal.Header>
+            <Modal.Body>
+              <ConfirmSms />
+            </Modal.Body>
+          </Modal>
+        </div>
         </div>
         </Container>
     );

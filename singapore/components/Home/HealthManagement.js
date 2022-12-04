@@ -17,7 +17,7 @@ const HealthManagement = () => {
     },
   ];
   return (
-    <Container>
+    <Container className="section_gap">
       <h2 className="text-center program_title">Health Management in Today’s Workplace</h2>
       <div className="d-flex justify-content-between">
       {healthMAnage.map((health, index) => (
