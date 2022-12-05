@@ -30,17 +30,20 @@ const Header = () => {
               title="Exhibitors & More"
               id="collasible-nav-dropdown"
             >
-              <NavDropdown.Item className="menu" href="ExhibitorsPage">
+              <NavDropdown.Item className="menu1" href="ExhibitorsPage">
                 Exhibition
               </NavDropdown.Item>
-              <NavDropdown.Item className="menu" href="PostConferencePage">
+              <NavDropdown.Item className="menu1" href="PostConferencePage">
                 Post Conference Workshop
               </NavDropdown.Item>
-              <NavDropdown.Item className="menu" href="SupportingOrganizations">
+              <NavDropdown.Item
+                className="menu1"
+                href="SupportingOrganizations"
+              >
                 Supporting Organisations
               </NavDropdown.Item>
 
-              <NavDropdown.Item className="menu" href="GalleryPage">
+              <NavDropdown.Item className="menu1" href="GalleryPage">
                 Gallery
               </NavDropdown.Item>
             </NavDropdown>

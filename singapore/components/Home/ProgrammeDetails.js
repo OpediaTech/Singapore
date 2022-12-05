@@ -16,10 +16,10 @@ const ProgrammeDetails = () => {
     <Container>
       <div className="text-center">
         <h2 className="program_title">Programme Details</h2>
-        <p className="mute_content">
+        <h6 className="mute_content">
           Hands-on sessions with Apoint experts that are hosted in The Fulertone
           Hotel Singapore on May 3 (9am - 5pm).
-        </p>
+        </h6>
       </div>
       <div className="text-center btngrp">
         <ButtonGroup aria-label="Basic example">

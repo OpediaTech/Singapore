@@ -25,7 +25,7 @@ export default function Home() {
     backgroundImage: `url('${banner.src}')`,
     backgroundSize: "cover",
     quality: "100",
-    layout: "fill",
+    // height: "100vh",
   };
   return (
     <div>
@@ -35,7 +35,7 @@ export default function Home() {
       </div>
       <AboutEgro />
       <Container className="section_gap">
-        <h2 className="fw-bold mb-5 black_title">Our Partners & Supporters</h2>
+        <h2 className="fw-bold black_title">Our Partners & Supporters</h2>
         <Partners />
       </Container>
       <Container id="SpeakerPage" className="section_gap">
@@ -57,7 +57,9 @@ export default function Home() {
         <BreakBtn />
       </div>
       <Container className="section_gap">
-        <h2 className="text-center mb-5 fw-bold black_title">Explore Event Gallary</h2>
+        <h2 className="text-center mb-5 fw-bold black_title">
+          Explore Event Gallary
+        </h2>
         <GallerySection length={4} />
         <div className="text-center">
           <a href="GalleryPage">

@@ -14,7 +14,7 @@ import naihe from "../../public/supporting-organization/naihe.png";
 import { Button, Container } from "react-bootstrap";
 import Image from "next/image";
 
-const SupportingOgn = ({length}) => {
+const SupportingOgn = ({ length }) => {
   const organizations = [
     {
       pic: iom,
@@ -91,25 +91,22 @@ const SupportingOgn = ({length}) => {
   ];
   return (
     <Container className="mb-5">
-      <h2 className="my-5 fw-bold text-center black_title">Supporting Organizations</h2>
+      <h2 className="my-5 fw-bold text-center black_title">
+        Supporting Organizations
+      </h2>
       <div className="row g-5">
-        {organizations.slice(0,length).map((organization, index) => (
-          <div
-            key={index}
-            className="col-12 col-lg-6"
-          >
-            <div className="card shadow-lg p-5 accomodation_content">
-            <Image src={organization.pic} alt="organization img" />
-            <h4 className="fw-bold my-4">{organization.title}</h4>
-            <p>{organization.description}</p>
-            <a href="">
-              {" "}
-              <Button className="learn_more_btn border-0 mt-4 fw-bold ">
-                Visit Website
-              </Button>
-            </a>
+        {organizations.slice(0, length).map((organization, index) => (
+          <div key={index} className="col-12 col-lg-6">
+            <div className="card shadow-lgN p-5 accomodation_content">
+              <Image src={organization.pic} alt="organization img" />
+              <h4 className="fw-bold my-4">{organization.title}</h4>
+              <p>{organization.description}</p>
+              <a href="">
+                <Button className="learn_more_btn border-0 mt-4 fw-bold ">
+                  Visit Website
+                </Button>
+              </a>
             </div>
-           
           </div>
         ))}
       </div>
