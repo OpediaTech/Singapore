@@ -5,7 +5,11 @@
   margin-top: 50px;
   margin-bottom: 100px;
 }
-
+.sliderSlcik{
+  /* background-color: red; */
+  /* height: 300px; */
+  margin: 40px 0px;
+}
 .title_content {
   color: #262424;
   font-size: 36px;
@@ -19,9 +23,7 @@
   font-size: 14px;
   line-height: 23px;
 }
-.icon a {
-  margin: 12px;
-}
+
 /* index page */
 .black_title {
   font-weight: 700;
@@ -172,6 +174,11 @@
   line-height: 25px;
   text-align: center;
   font-size: 15px;
+  margin-right: 10px;
+}
+
+.icon a:last-child{
+  margin-right: 0;
 }
 .speakers {
   height: 446px;
@@ -188,6 +195,8 @@
 
 .speakerImg img {
   width: 100%;
+  height: 100% !important;
+  max-height: 280px !important;
   border-radius: 10px;
   transition: 0.4s ease-in-out;
 }
@@ -613,7 +622,7 @@
 .navbarH1Tag {
   font-weight: 700;
   font-size: 100px;
-  line-height: 85px;
+  line-height: 90px;
   margin-bottom: 33px;
 }
 .navbarH1TagSpan {
@@ -622,9 +631,50 @@
 @media screen and (max-width: 1199px) {
   .navbarH1Tag {
     font-weight: 700;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 68px;
+    line-height: 64px;
   }
+
+  .bannerTextPart{
+    padding-top: unset;
+    padding-bottom: 100px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+
+    button.navbar-toggler.collapsed {
+      margin: 36px 0 46px;
+  }
+
+  .bannerTextPart{
+    text-align: center;
+    padding-top: unset;
+  }
+
+  .bannerTextPart .ban1{
+    margin: 20px 0;
+  }
+
+  .navbarH1Tag {
+    font-size: 36px;
+    line-height: 45px;
+    margin: 0;
+  }
+
+  .bannerTextPart p {
+    font-size: 16px !important;
+    margin: 0;
+}
+
+.section_gap{
+  margin-bottom: 60px;
+}
+
+  .bannerTextPart p.navbarPtagHealth{
+    margin: 15px 0 30px;
+  }
+
 }
 
 .navbarPtagHealth {
@@ -633,8 +683,8 @@
   font-weight: 300;
   font-size: 32px;
   line-height: 26px;
-  /* identical to box height, or 82% */
   color: #000000;
+  margin: 33px 0 60px;
 }
 .navbarButtonRegisterPlace {
   box-sizing: border-box;
@@ -669,11 +719,7 @@
   color: #262424;
 }
 @media screen and (max-width: 1199px) {
-  .aboutTheErgoStyleH2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 62px;
-  }
+  
 }
 
 .aboutTheErgoStyleH2Span {
@@ -687,12 +733,6 @@
   color: #262424;
   margin: 50px 0;
 }
-@media screen and (max-width: 1199px) {
-  .aboutTheErgoStyleP {
-    font-size: 20px;
-    line-height: 40px;
-  }
-}
 
 .aboutTheErgoStyleButton {
   box-sizing: border-box;
@@ -704,3 +744,177 @@
   font-weight: 500;
   font-family: "Archivo";
 }
+
+/* mine css */
+.primary__btn{
+  transition: 0.3s;
+  background: #FACD02;
+  color: #000000;
+}
+
+.primary__btn, .explore__btn{
+  
+  padding: 15px 40px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  border: none;
+  outline: none;
+}
+
+/* 
+.arrow__btn{
+  padding: 15px 40px;
+  border-radius: 4px;
+  background: #FACD02;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  border: none;
+  outline: none;
+  color: #000000;
+} */
+.primary__btn svg, .explore__btn svg{
+  display: none;
+  margin-left: 10px;
+  font-size: 17px;
+}
+
+.primary__btn:hover{
+  background: #000000;
+  color: #ffffff;
+}
+
+.primary__btn:hover svg, .explore__btn:hover svg{
+  display: inline-block;
+}
+
+.explore__btn{
+  background: #000000;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+}
+
+.explore__btn:hover{
+  color: #fff;
+}
+
+.program__btn{
+  padding: 12px 50px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.program__btn1{
+  background: #FACD02;
+}
+
+.program__btn2{
+  background: #FDF0B3;
+}
+
+.dropdown-menu{
+  padding: 13px 11px;
+  width: 200px;
+}
+
+.dropdown-item{
+  white-space: unset !important;
+}
+
+.menu1{
+  padding: 6px 19px !important;
+}
+
+.menu1:hover{
+  background: #FACD0280;
+  border-radius: 4px;
+
+}
+
+.bannerTextPart p{
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.slick-dots li button:before {
+  line-height: 10px;
+  width: 10px;
+  height: 10px;
+  content: '';
+  background: #666;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button:before{
+  background: #FACD02;
+}
+
+.slide__items {
+  outline: none;
+}
+
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  line-height: 10px;
+}
+
+@media screen and (max-width: 991px) {
+  .aboutTheErgoStyleH2, .program_title, .time h4 {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 48px;
+  }
+
+  .black_title.inst__title{
+    font-size: 28px !important;
+    line-height: 45px !important;
+  }
+
+  .aboutTheErgoStyleP, .spk_con, .mute_content, .time p, .inst__p {
+    font-size: 20px;
+    line-height: 40px;
+    text-align: justify;
+  }
+
+  .time{
+    margin: 40px 0 30px;
+  }
+
+  .time p{
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 575px) {
+
+.black_title{
+  margin-bottom: 40px;
+  line-height: 48px;
+}
+
+.learn_more_btn{
+  padding: 15px 28px;
+}
+
+.accomodation_content a{
+  text-align: center;
+}
+
+.speaker__hov{
+  padding: 12px;
+}
+
+.name{
+  font-size: 16px;
+}
+
+.designation{
+  font-size: 12px;
+}
+
+}
+/* mine css */

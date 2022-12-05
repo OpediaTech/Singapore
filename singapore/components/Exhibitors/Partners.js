@@ -13,6 +13,10 @@ import miha from "../../public/supporting-organization/miha.png";
 import naihe from "../../public/supporting-organization/naihe.png";
 import Image from "next/image";
 
+import Head from "next/head";
+
+import Slider from "react-slick";
+
 const Partners = () => {
   const brands = [
     {
@@ -52,33 +56,86 @@ const Partners = () => {
       pic: miha,
     },
   ];
+
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    autoplay:true,
+    slidesToShow: 5,
+    slidesToScroll: 1
+  };
   return (
-    <div>
-      <div className="d-flex flex-column flex-lg-row flex-wrap  align-items-center justify-content-lg-between  partner">
-        {brands.slice(0, 5).map((brand, index) => (
-          <div key={index}>
-            <Image
-              className="img-fluid mx-auto"
-              height={78}
-              src={brand.pic}
-              alt="brand img"
-            />
+    <>
+      <Head>
+        <link rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
+      </Head>
+      <div className="Partnet__Slider d-block d-lg-none">
+      <Slider {...settings}>
+          {/* <div>
+            <h3>1</h3>
           </div>
-        ))}
-      </div>
-      <div className="d-flex flex-column flex-lg-row flex-wrap flex-lg-nowrap align-items-center justify-content-lg-between  partner">
-        {brands.slice(5, 12).map((brand, index) => (
-          <div key={index}>
-            <Image
-              className="img-fluid mx-aut0"
-              height={78}
-              src={brand.pic}
-              alt="brand img"
-            />
+          <div>
+            <h3>2</h3>
           </div>
-        ))}
+          <div>
+            <h3>3</h3>
+          </div>
+          <div>
+            <h3>4</h3>
+          </div>
+          <div>
+            <h3>5</h3>
+          </div>
+          <div>
+            <h3>6</h3>
+          </div> */}
+          {
+            brands.map((brand, index) => (
+              <div className="slide__items" key={index}>
+                <Image
+                  className="img-fluid mx-auto"
+                  height={78}
+                  src={brand.pic}
+                  alt="brand img"
+                />
+              </div>))
+          }
+        </Slider>
       </div>
-    </div>
+      <div >
+       
+
+        <div className="d-none d-lg-flex flex-column flex-lg-row flex-wrap  align-items-center justify-content-lg-between  partner">
+          {brands.slice(0, 5).map((brand, index) => (
+            <div key={index}>
+              <Image
+                className="img-fluid mx-auto"
+                height={78}
+                src={brand.pic}
+                alt="brand img"
+              />
+            </div>
+          ))}
+        </div>
+        <div className="d-none d-lgflex flex-column flex-lg-row flex-wrap flex-lg-nowrap align-items-center justify-content-lg-between  partner">
+          {brands.slice(5, 12).map((brand, index) => (
+            <div key={index}>
+              <Image
+                className="img-fluid mx-aut0"
+                height={78}
+                src={brand.pic}
+                alt="brand img"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+
+    </>
   );
 };
 

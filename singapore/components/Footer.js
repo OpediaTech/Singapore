@@ -19,13 +19,13 @@ const Footer = () => {
           </a>
         </div>
         <div className="col-12 col-lg-6">
-          <div className="footer d-flex flex-column flex-lg-row justify-content-between">
-            <div className="d-flex flex-column">
+          <div className="footer d-flex flex-lg-row justify-content-between">
+            <div className="d-flex w-50 flex-column">
               <a href="SpeakerPage">Speakers</a>
               <a href="">Programme</a>
               <a href="">Tickets</a>
             </div>
-            <div className="d-flex flex-column">
+            <div className="d-flex w-50 flex-column">
               <a href="">Gallery</a>
               <a href="">Our Partners</a>
               <a href="">Post Conference Workshop</a>
@@ -34,16 +34,16 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <div className="row g-5 mt-3">
-        <div className="col-12 col-lg-6">
-          <a href="">
+      <div className="row g-3 g-lg-5 mt-3 align-items-center">
+        <div className="col-12 col-sm-6 col-lg-6">
+          <a href="" className="d-block text-center text-md-start">
             <Image className="ms-2" src={logo} alt="arrow" />
           </a>
         </div>
-        <div className="col-12 col-lg-6">
-          <div className="d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <div className="col-12 col-sm-6 col-lg-6">
+          <div className="d-flex flex-column flex-lg-row flex-md-row justify-content-between align-items-center">
             <div className="reserve">
-              <p>@2023. All right resereved</p>
+              <p className="m-0" >@2023. All right resereved</p>
             </div>
             <div className="icon d-flex align-items-center justify-content-center text-white">
               <a href="">

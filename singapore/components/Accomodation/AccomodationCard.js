@@ -18,7 +18,7 @@ const AccomodationCard = ({accomodation}) => {
           <p className="accomodation_content">
           {accomodation?.specialContent}
           </p>
-          <a href=""><Button className="learn_more_btn border-0 fw-bold gap">Learn More</Button></a>
+          <a href=""><Button className="primary__btn gap">Learn More</Button></a>
         </div>
         <div className="col-12 col-lg-6">
           <Image className="w-100" src={accomodation?.pic} />

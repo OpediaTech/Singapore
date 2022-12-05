@@ -20,7 +20,7 @@ const BreakBtn = () => {
         <div className='section_gap d-flex flex-column flex-lg-row justify-content-center pt-5'>
             {
                 btns.map((btn,index)=><div key={index}>
-                    <Button className={btn.classname}>{btn.name}</Button>
+                    <div className={btn.classname}>{btn.name}</div>
                 </div>)
             }
         </div>

@@ -9,7 +9,7 @@ import {BsInstagram, BsTwitter} from "react-icons/bs";
 
 const SpeakerCard = ({ speaker }) => {
   return (
-    <div className="col-12 col-md-6 col-lg-3">
+    <div className="col-6 col-md-4 col-lg-4 col-xl-3">
       <Card className="speakers border-0">
         <div className="speakerImg">
               <Image className="ppp" src={speaker.pic} alt="image" />

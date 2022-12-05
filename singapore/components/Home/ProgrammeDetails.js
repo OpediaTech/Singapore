@@ -5,28 +5,28 @@ const ProgrammeDetails = () => {
   const buttons = [
     {
       btnName: "Day 1",
-      className: "learn_more_btn",
+      className: "program__btn program__btn1",
     },
     {
       btnName: "Day 2",
-      className: "exhibitor_btn",
+      className: "program__btn program__btn2",
     },
   ];
   return (
     <Container>
       <div className="text-center">
         <h2 className="program_title">Programme Details</h2>
-        <h6 className="mute_content">
+        <p className="mute_content">
           Hands-on sessions with Apoint experts that are hosted in The Fulertone
           Hotel Singapore on May 3 (9am - 5pm).
-        </h6>
+        </p>
       </div>
       <div className="text-center btngrp">
         <ButtonGroup aria-label="Basic example">
           {buttons.map((btn, index) => (
-            <Button key={index} className={btn.className}>
+            <div key={index} className={btn.className}>
               {btn.btnName}
-            </Button>
+            </div>
           ))}
         </ButtonGroup>
       </div>

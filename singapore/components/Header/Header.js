@@ -6,8 +6,8 @@ import logo from "../../public/logo/logo.png";
 const Header = () => {
   return (
     <Navbar collapseOnSelect expand="lg">
-      <Container>
-        <Navbar.Brand href="/">
+      <Container className="d-block d-sm-flex text-center">
+        <Navbar.Brand href="/" className="d-block d-sm-inline">
           <Image src={logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -50,9 +50,9 @@ const Header = () => {
           </Nav>
           <Nav>
             <Nav.Link href="RegistrationPage">
-              <Button className="learn_more_btn border-0 fw-bold ">
+              <div className="primary__btn">
                 Register Now
-              </Button>
+              </div>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

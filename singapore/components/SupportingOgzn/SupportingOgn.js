@@ -94,13 +94,13 @@ const SupportingOgn = ({ length }) => {
       <h2 className="my-5 fw-bold text-center black_title">
         Supporting Organizations
       </h2>
-      <div className="row g-5">
+      <div className="row g-3 g-xl-5">
         {organizations.slice(0, length).map((organization, index) => (
-          <div key={index} className="col-12 col-lg-6">
-            <div className="card shadow-lgN p-5 accomodation_content">
+          <div key={index} className="col-6 col-lg-6">
+            <div className="card shadow-lgN p-3 p-xl-5 accomodation_content">
               <Image src={organization.pic} alt="organization img" />
-              <h4 className="fw-bold my-4">{organization.title}</h4>
-              <p>{organization.description}</p>
+              <h4 className="fw-bold my-4 black_title inst__title text-center text-sm-start">{organization.title}</h4>
+              <p className="inst__p">{organization.description}</p>
               <a href="">
                 <Button className="learn_more_btn border-0 mt-4 fw-bold ">
                   Visit Website

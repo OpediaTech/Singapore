@@ -1,16 +1,14 @@
 import React from "react";
 import { Button, Container } from "react-bootstrap";
+import { BsArrowRight} from "react-icons/bs"
 
 const Banner = () => {
   return (
     <Container className="section_gap">
       <div className="bannerTextPart">
-        <p className="navbarPtag">Conference & Exhibition</p>
+        <p className="text-center text-sm-start">Conference & Exhibition</p>
 
-        <Button
-          className="border-0
-       navbarPtagHotal"
-        >
+        <Button className="ban1 border-0 navbarPtagHotal">
           31 August - 1 September 2022 | The Fullerton Hotel Singapore
         </Button>
 
@@ -22,7 +20,7 @@ const Banner = () => {
           Holistic approach to workplace health
         </p>
 
-        <button className="navbarButtonRegisterPlace">Register Place</button>
+        <button className="primary__btn">Register Place<BsArrowRight/> </button>
       </div>
     </Container>
   );

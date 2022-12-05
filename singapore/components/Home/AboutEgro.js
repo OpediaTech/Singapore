@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Button, Container, Modal } from "react-bootstrap";
 import AboutModal from "./AboutModal";
+import { BsArrowRight} from "react-icons/bs"
 
 const AboutEgro = () => {
   const [show, setShow] = useState(false);
@@ -9,14 +10,14 @@ const AboutEgro = () => {
   const handleShow = () => setShow(true);
   return (
     <Container className="section_gap">
-      <h2 className="aboutTheErgoStyleH2">
+      <h2 className="aboutTheErgoStyleH2 text-center text-sm-start m-0">
         About the
         <span className="aboutTheErgoStyleH2Span">ergonomics and hygiene</span>
         <br />
         Conference 2023
       </h2>
 
-      <h6 className="aboutTheErgoStyleP">
+      <p className="aboutTheErgoStyleP">
         The Ergonomics and Hygiene 2023 Conference and Exhibition will be held
         on August 31, 2023 and September 1, 2022, from 9.00 a.m. to 5.00 p.m. at
         the Institute of Ergonomics and Hygiene (IEH). The environmental health
@@ -26,11 +27,11 @@ const AboutEgro = () => {
         health and safety professionals to network and share their practices
         through a conference setting; explore current available solutions and
         technologies in hazard control and work productivity;
-      </h6>
+      </p>
 
-      <div onClick={handleShow}>
-        <button className="aboutTheErgoStyleButton">
-          Explore Conference Details
+      <div onClick={handleShow} className="text-center text-sm-start">
+        <button className="primary__btn">
+          Explore Conference Details <BsArrowRight/>
         </button>
       </div>
 

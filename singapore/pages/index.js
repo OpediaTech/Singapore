@@ -19,6 +19,7 @@ import HealthManagement from "../components/Home/HealthManagement";
 import BreakBtn from "../components/Home/BreakBtn";
 import Banner from "../components/Home/Banner";
 import banner from "../public/banner/banner_bg.png";
+import { BsArrowRight} from "react-icons/bs"
 
 export default function Home() {
   const styling = {
@@ -35,15 +36,16 @@ export default function Home() {
       </div>
       <AboutEgro />
       <Container className="section_gap">
-        <h2 className="fw-bold black_title">Our Partners & Supporters</h2>
+        <h2 className="fw-bold black_title text-center text-sm-start">Our Partners & Supporters</h2>
         <Partners />
       </Container>
       <Container id="SpeakerPage" className="section_gap">
         <div className="d-flex flex-column flex-lg-row justify-content-between align-items-center my-5">
           <SpeakerHeading />
           <div>
-            <a href="SpeakerPage">
-              <Button className="see_all_btn">Explore All</Button>
+            <a href="SpeakerPage" className="explore__btn">
+              {/* <Button className="see_all_btn">Explore All</Button> */}
+              Explore All
             </a>
           </div>
         </div>
@@ -62,16 +64,16 @@ export default function Home() {
         </h2>
         <GallerySection length={4} />
         <div className="text-center">
-          <a href="GalleryPage">
-            <Button className="see_all_btn">See All Photos</Button>
+          <a href="GalleryPage" className="explore__btn">
+            See All Photos <BsArrowRight/>
           </a>
         </div>
       </Container>
       <div className="section_gap">
         <SupportingOgn length={2} />
         <div className="text-center">
-          <a href="SupportingOrganizations">
-            <Button className="see_all_btn">See All Organizations</Button>
+          <a href="SupportingOrganizations" className="explore__btn">
+            See All Organizations <BsArrowRight/>
           </a>
         </div>
       </div>

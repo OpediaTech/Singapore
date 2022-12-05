@@ -123,7 +123,7 @@ const Speakers = ({ minLength, maxLength }) => {
   ];
   return (
     <Container>
-      <div className="row g-5">
+      <div className="row g-3 g-lg-5">
         {speakers.slice(minLength, maxLength).map((speaker, index) => (
           <SpeakerCard key={index} speaker={speaker}></SpeakerCard>
         ))}
