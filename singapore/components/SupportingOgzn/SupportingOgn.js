@@ -100,7 +100,7 @@ const SupportingOgn = ({ length }) => {
             <div className="card shadow-lgN p-3 p-xl-5 accomodation_content">
               <Image className="img-fluid" src={organization.pic} alt="organization img" />
               <h4 className="fw-bold my-4 black_title inst__title text-center text-sm-start">{organization.title}</h4>
-              <p className="inst__p d-md-none">{organization.description.slice(0,100)} <span className="fw-bold">See More ...</span></p>
+              <p className="inst__p d-md-none">{organization.description.slice(0,100)}</p>
               <p className="inst__p d-none d-md-block">{organization.description}</p>
               <a href="">
                 <Button className="learn_more_btn border-0 mt-4 fw-bold ">
